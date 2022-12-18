@@ -6,16 +6,10 @@
  */
 void print_to_98(int n)
 {
-	while (n < 98)
+	for (n = 1, n <= 98, n++)
 	{
 		printf("%i,", n);
-		n++;
 	}
-	while (n > 98)
-	{
-		printf("%i,", n);
-		n++;
-	}
-	printf("98");
-	_putchar('\n');
+	_putchar("\n");
+	return (0);
 }
