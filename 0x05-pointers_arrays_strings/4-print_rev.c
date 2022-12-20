@@ -16,10 +16,10 @@ void print_rev(char *s)
 		s++;
 	}
 	s--;
-	for (o = rev; o > 0; o--)
+	for (p = rev; p > 0; p--)
 	{
 		_putchar(*s);
 		s--;
 	}
-	_putchar('\n')
+	_putchar('\n');
 }
