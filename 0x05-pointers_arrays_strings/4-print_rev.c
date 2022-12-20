@@ -18,8 +18,8 @@ void print_rev(char *s)
 	s--;
 	for (p = rev; p > 0; p--)
 	{
-		_putchar(*s);
+		putchar(*s);
 		s--;
 	}
-	_putchar('\n');
+	putchar('\n');
 }
