@@ -2,30 +2,18 @@
 #include <stdio.h>
 
 /**
- * puts2 - function should print only on character at a time
+ * puts2 - print every other character
  * @str: input
- * Return: print
+ * Return: void
  */
-
 void puts2(char *str)
 {
-	int oneCh = 0;
-	int n = 0;
-	char *m = str;
-	int o;
+	int i;
 
-	while (*m != '\0')
-	{
-		m++;
-		oneCh++;
-	}
-	n = oneCh - 1;
-	for (o = 0; o <= n; o++)
-	{
-		if (o % 2 == 0)
+	for (i = 0; str[i] != '\0'; i++)
+		if (i % 2 == 0)
 		{
-			putchar(str[0]);
+			putchar(str[i]);
 		}
-	}
 	putchar('\n');
 }
