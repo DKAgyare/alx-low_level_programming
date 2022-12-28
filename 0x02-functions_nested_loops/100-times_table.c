@@ -5,7 +5,7 @@
  * @n: number of the times table
  */
 
-void print _times_table(int n)
+void print_times_table(int n)
 {
 	int i, j, k;
 
